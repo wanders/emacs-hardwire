@@ -1,0 +1,13 @@
+* hardwire.el
+
+This package allows reworking html documents replacing links to
+external css and js file with the actual contents. With some luck this
+will make the html file self contained. The primary use originally
+intended is after org-mode exporting to html.
+
+* Usage
+
+Execute the function =hardwire-css-js-in-buffer= in a buffer. It try
+to find all references to external stylesheets and scripts and
+download those and /hardwire/ those into the html.
+
